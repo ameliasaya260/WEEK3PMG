@@ -1,4 +1,4 @@
-public class Main{
+public class min{
     public static void main(String[] args) {
         Produk p = new Produk("baju", "pakaian",100000, 5);
 

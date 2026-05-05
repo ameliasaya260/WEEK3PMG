@@ -1,14 +1,10 @@
-import base.Produk;
-
 public class Main{
     public static void main(String[] args) {
-        Produk p = new Produk("indomi goreng", "makanan",3500,100);
+        Elektronik mesinCuci = new Elektronik("Samsung","Alat Rumah",2000000,20);
 
-        System.out.println(p.stok);
-        // System.out.println(p.harga);
-        // System.out.println(p.kategori);
-        // System.out.println(p.nama);
+        mesinCuci.setGaransi(0);
+        mesinCuci.tampilInfo();
 
-        p.tampilInfo();
+        
     }
 }
