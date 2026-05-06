@@ -32,3 +32,12 @@ class Produk {
         return harga;
     }
 }
+
+class Elektronik extends Produk {
+    private int garansiTahun;
+
+    public Elektronik(String nama, double harga, int stok, int garansiTahun) {
+        super(nama, harga, stok);
+        this.garansiTahun = garansiTahun;
+    }
+
