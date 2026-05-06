@@ -41,3 +41,12 @@ class Elektronik extends Produk {
         this.garansiTahun = garansiTahun;
     }
 
+     @Override
+    public void tampilInfo() {
+        System.out.println("[ELEKTRONIK] " + getNama() +
+                " | Rp" + getHarga() +
+                " | Garansi: " + garansiTahun + " thn" +
+                " | Stok: " + getStok());
+    }
+
+
