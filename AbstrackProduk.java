@@ -70,6 +70,12 @@ class Makanan extends Produk {
                 " | Exp: " + kedaluwarsa +
                 " | Stok: " + getStok());
     }
+     @Override
+    public double hitungDiskon() {
+        return getHarga() * 0.80;
+    }
+}
+
 
 
 
