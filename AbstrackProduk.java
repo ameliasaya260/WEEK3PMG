@@ -55,4 +55,13 @@ class Elektronik extends Produk {
     }
 }
 
+class Makanan extends Produk {
+    private String kedaluwarsa;
+
+    public Makanan(String nama, double harga, int stok, String kedaluwarsa) {
+        super(nama, harga, stok);
+        this.kedaluwarsa = kedaluwarsa;
+    }
+
+
 
