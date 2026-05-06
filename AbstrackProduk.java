@@ -27,3 +27,8 @@ class Produk {
         System.out.println("Harga: " + harga);
         System.out.println("Stok: " + stok);
     }
+
+      public double hitungDiskon() {
+        return harga;
+    }
+}
