@@ -75,6 +75,46 @@ class Makanan extends Produk {
         return getHarga() * 0.80;
     }
 }
+class Minuman extends Produk {
+    private String ukuran;
+
+    public Minuman(String nama, double harga, int stok, String ukuran) {
+        super(nama, harga, stok);
+        this.ukuran = ukuran;
+    }
+
+    @Override
+    public void tampilInfo() {
+        System.out.println("[MINUMAN] " + getNama() +
+                " | Rp" + getHarga() +
+                " | " + ukuran +
+                " | Stok: " + getStok());
+    }
+
+    @Override
+    public double hitungDiskon() {
+        return getHarga() * 0.95;
+    }
+}
+
+// Main class
+public class AbstrackProduk {
+    public static void main(String[] args) {
+
+        Elektronik laptop = new Elektronik("Laptop Asus", 8500000, 10, 2);
+        Makanan indomie = new Makanan("Indomie Goreng", 3500, 100, "2026-12-01");
+        Minuman esTeh = new Minuman("Es Teh Manis", 5000, 50, "500ml");
+
+        laptop.tampilInfo();
+        indomie.tampilInfo();
+        esTeh.tampilInfo();
+
+        System.out.println("\n=== Harga Setelah Diskon ===");
+        System.out.println("Laptop: Rp" + laptop.hitungDiskon());
+        System.out.println("Indomie: Rp" + indomie.hitungDiskon());
+        System.out.println("Es Teh: Rp" + esTeh.hitungDiskon());
+    }
+}
 
 
 
