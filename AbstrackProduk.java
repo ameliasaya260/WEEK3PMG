@@ -21,3 +21,9 @@ class Produk {
     public int getStok() {
         return stok;
     }
+
+    public void tampilInfo() {
+        System.out.println("Nama Produk: " + nama);
+        System.out.println("Harga: " + harga);
+        System.out.println("Stok: " + stok);
+    }
