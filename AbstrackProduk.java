@@ -9,3 +9,7 @@ class Produk {
         this.harga = harga;
         this.stok = stok;
     }
+
+     public String getNama() {
+        return nama;
+    }
