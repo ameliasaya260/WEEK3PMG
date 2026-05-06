@@ -2,21 +2,22 @@ package toko;
 
 import base.Produk;
 
-public class Pemasukan extends Produk {
+ class Pemasukan extends Produk {
 
     private double totalPemasukan;
-
-    public Pemasukan(String nama, String kategori, double harga, int stok) {
-        super(nama, kategori, harga, stok);
+    
+    public Pemasukan(String nama, double harga, int stok, String kategori){
+        super(nama,harga,stok,kategori);
         this.totalPemasukan = 0;
     }
 
-    void tambahPemasukan(int jumlah) {
-        if (jumlah <= stok) {
+    void tambahPemasukan(int jumlah){
+        if(jumlah <=  stok){
             totalPemasukan += jumlah * harga;
+
             stok -= jumlah;
-        } else {
-            System.out.println("Stok tidak mencukupi");
+        } else{
+            System.out.println("Stok tidak cukup");
         }
     }
 }
