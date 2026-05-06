@@ -49,4 +49,10 @@ class Elektronik extends Produk {
                 " | Stok: " + getStok());
     }
 
+    @Override
+    public double hitungDiskon() {
+        return getHarga() * 0.90;
+    }
+}
+
 
