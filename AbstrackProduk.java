@@ -63,5 +63,14 @@ class Makanan extends Produk {
         this.kedaluwarsa = kedaluwarsa;
     }
 
+     @Override
+    public void tampilInfo() {
+        System.out.println("[MAKANAN] " + getNama() +
+                " | Rp" + getHarga() +
+                " | Exp: " + kedaluwarsa +
+                " | Stok: " + getStok());
+    }
+
+
 
 
