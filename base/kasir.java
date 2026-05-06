@@ -1,6 +1,5 @@
 package base;
 
-
 public class kasir {
     void cekProduk (Produk P){
         System.out.println("p.stok");

@@ -29,7 +29,6 @@ public class Produk {
         this.stok = stok;
     }
 
-
     public void tampilInfo() {
         //semua atribut bisa diakses di sini - kita masih di dalam class produk
         System.out.println("produk   :"+nama);

@@ -1,11 +1,11 @@
 package base;
-public class produk {
+public class Produk {
     private String nama; //hanya bisa diakses dalam class produk
     String kategori; //default - hanya bisa diakses dalam package toko
     protected double harga; // bisa diakses subclass meskipun beda package
     public int stok; // bisa diakses dari mana saja 
 
-    public produk(String nama, String kategori, double harga, int stok) {
+    public Produk(String nama, String kategori, double harga, int stok) {
         this.nama = nama;
         this.kategori = kategori;
         this.harga = harga;
