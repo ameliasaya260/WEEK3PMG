@@ -13,3 +13,11 @@ class Produk {
      public String getNama() {
         return nama;
     }
+
+     public double getHarga() {
+        return harga;
+    }
+
+    public int getStok() {
+        return stok;
+    }
